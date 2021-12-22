@@ -5,7 +5,7 @@ git clone https://github.com/tryyyagain/Pcap
 cd Pcap
 make
 sudo -s
-./pcap_checker
+./pcap_checker [-f filename] [-o dumpfile] [-p protocol]
 ````
 - 那個封包擷取的時間戳記
 - 來源MAC位址、目的MAC位址、Ethernet type欄位
@@ -13,3 +13,6 @@ sudo -s
 - 如果那個封包是TCP或UDP封包，則再多顯示來源port號碼與目的port號碼
 
 bonus
+- support pcap_open_live
+- pcap dumper
+- protocol filter
