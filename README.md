@@ -13,6 +13,7 @@ sudo -s
 - 如果那個封包是TCP或UDP封包，則再多顯示來源port號碼與目的port號碼
 
 bonus
+- support variety of devices
 - support pcap_open_live
 - pcap dumper
 - protocol filter
