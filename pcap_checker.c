@@ -70,11 +70,10 @@ int main( int argc, char **argv ){
         exit(1);
     }
     
-    list_device( d );      
-    printf("Choose the device\n");
-    scanf( "%s", device );
-    
     if( argc < 2 ){ 
+        list_device( d );      
+        printf("Choose the device\n");
+        scanf( "%s", device );
         handle = pcap_open_live( device, 65535, 1, 1, errbuf );
 
         if( !handle ){
